@@ -12,14 +12,14 @@
             font-family: Arial, sans-serif;
         }
         body {
-            background-color: #87CEEB;
+            background: url('background.jpg') no-repeat center center/cover;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
         .container {
-            background: white;
+            background: rgba(255, 255, 255, 0.9);
             padding: 20px;
             width: 90%;
             max-width: 400px;
@@ -88,9 +88,9 @@
         <button class="btn" onclick="showOTPField()">Send OTP</button>
         <input type="text" id="otpField" placeholder="Enter OTP" required>
         <input type="password" placeholder="Enter Password" required>
-        <a href="forgot.html"  style="text-decoration: none;" class="forgot">Forgot Password?</a>
-        <a href="main.html"  style="text-decoration: none;">
-        <button class="btn">Signin</button>
+        <a href="forgot.html" class="forgot">Forgot Password?</a>
+        <a href="main.html">
+            <button class="btn">Signin</button>
         </a>
     </div>
 </body>
