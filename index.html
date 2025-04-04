@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find and Reward - Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #87CEEB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            width: 90%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .language {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        select {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        h2 {
+            color: #283593;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background: #D32F2F;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .forgot {
+            display: block;
+            margin-top: 10px;
+            color: #D32F2F;
+            text-decoration: none;
+        }
+        #otpField {
+            display: none;
+        }
+    </style>
+    <script>
+        function showOTPField() {
+            document.getElementById("otpField").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="language">
+            <label for="language">Language:</label>
+            <select id="language">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+            </select>
+        </div>
+        <h1>FIND AND REWARD</h1>
+        <h2>Signin</h2>
+        <input type="tel" placeholder="Enter Phone Number" required>
+        <button class="btn" onclick="showOTPField()">Send OTP</button>
+        <input type="text" id="otpField" placeholder="Enter OTP" required>
+        <input type="password" placeholder="Enter Password" required>
+        <a href="forgot.html"  style="text-decoration: none;" class="forgot">Forgot Password?</a>
+        <a href="main.html"  style="text-decoration: none;">
+        <button class="btn">Signin</button>
+        </a>
+    </div>
+</body>
+</html>
